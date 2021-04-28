@@ -1,5 +1,13 @@
+import scipy.linalg as la
+import numpy as np
 from SSVD.SSVD_numba import SSVD_numba
 from SSVD.ClusterPlot import ClusterPlot
+from SSVD.SSVD import SSVD
+
+X = np.array([[1,5,3,0,2,2],
+             [0,0,2,3,4,2],
+             [9,5,7,1,3,5]])
+SSVD(X, gamma1 = 2, gamma2 = 2)
 
 u_tilde = np.r_[np.array([10,9,8,7,6,5,4,3]), 2*np.ones(17), np.zeros(75)]
 u = u_tilde/la.norm(u_tilde)
@@ -11,4 +19,5 @@ X_star = s * u.reshape((-1,1)) @ v.reshape((-1,1)).T
 np.random.seed(663)
 X = X_star + np.random.normal(0, 1, size = X_star.shape)
 niter, u, v, s, _, _= SSVD_numba(X, 2, 2)
+
 ClusterPlot(u.reshape(-1), v.reshape(-1), s, clusters, 0)
