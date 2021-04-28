@@ -6,7 +6,13 @@ The project disects the paper Biclustering via Sparse Singular Value Decompositi
 
 ## Functions 
 
-We created three main functions: the `SSVD`
+We created three main functions: the `SSVD`, `SSVD_numba`, and `ClusterPlot`. All three functions can be imported by the following commands:
+
+`from SSVD.SSVD import SSVD`
+
+`from SSVD.SSVD_numba import SSVD_numba`
+
+ `from SSVD.ClusterPlot import ClusterPlot`
 
 ## Package Installation
 The package can be installed via the following command:
