@@ -33,4 +33,4 @@ ClusterPlot(u.reshape(-1), v.reshape(-1), s, clusters, 0)
 niter, u, v, s, _, _= SSVD(X, 2, 2)
 
 # it performs pretty well. Almost all the noise is removed from our dataset
-ClusterPlot(u.reshape(-1), v.reshape(-1), s, clusters, 0)
+ClusterPlot(u.reshape(-1), v.reshape(-1), s, clusters, 0) 
