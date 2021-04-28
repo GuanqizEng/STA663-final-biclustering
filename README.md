@@ -12,3 +12,6 @@ The project disects the paper Biclustering via Sparse Singular Value Decompositi
 
 ## Function for ClusterPlot
 
+## Package Installation
+
+pip install git+https://github.com/GuanqizEng/STA663-final-biclustering.git@main
