@@ -6,8 +6,11 @@ The project disects the paper Biclustering via Sparse Singular Value Decompositi
 
 ## Functions for SSVD
 -two functions for calculating BIC
+
 -two functions for choosing optimal penalty parameters
+
 -one function for updating sparse singular vectors
+
 -one function for generating SSVD results
 
 ## Function for ClusterPlot
