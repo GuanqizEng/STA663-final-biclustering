@@ -4,16 +4,9 @@ author: Chengxin Yang, Guanqi Zeng
 
 The project disects the paper Biclustering via Sparse Singular Value Decomposition and implement the SSVD algorithm in the original paper with optimized functions.
 
-## Functions for SSVD
--two functions for calculating BIC
+## Functions 
 
--two functions for choosing optimal penalty parameters
-
--one function for updating sparse singular vectors
-
--one function for generating SSVD results
-
-## Function for ClusterPlot
+We created three main functions: the `SSVD`
 
 ## Package Installation
 The package can be installed via the following command:
