@@ -1,28 +1,29 @@
-from setuptools import setup, find_packages
+import setuptools
 from os import path
 
-setup(
-      name='STA663-final-biclustering',
-      version=3.6,
-      description='A python package of Biclustering for Sparse matrix',
-      url='https://github.com/GuanqizEng/STA663-final-biclustering',
-      author='Chengxin Yang, Guanqi Zeng',
-      author_email='chengxin.yang@duke.edu, guanqi.zeng@duke.edu',
-      classifiers=[
-                  'Development Status :: 3 - Alpha',
-                  'Intended Audience :: Developers',
-                  'Topic :: Software Development :: Libraries :: Python Modules',
-                  'License :: OSI Approved :: MIT License',
-                  'Programming Language :: Python :: 3',
-                  'Programming Language :: Python :: 3.4',
-                  'Programming Language :: Python :: 3.5',
-                   'Programming Language :: Python :: 3.6',
-                  ],
-      py_modules = ['STA663-final-biclustering'],
-      packages=find_packages(),
-      scripts = ['run_STA663-final-biclustering.py'],
-      data_files=[('my_data', ['`two real world data sets`/bracsample.txt', 
-                       '`two real world data sets`/bracsample.txt',
-                       '`two real world data sets`/LungCancerData.txt'])],
-      python_requires='>=3',
-      )
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="STA663-final-biclustering-cxgq", # Replace with your own username
+    version="1.0",
+    author="Chengxin Yang, Guanqi Zeng",
+    author_email="chengxin.yang@duke.edu, guanqi.zeng@duke.edu",
+    description='A python package of Biclustering for Sparse matrix',
+    url="https://github.com/Cheungsin/STA663-final-biclustering",
+    py_modules = ['STA-663-final-biclustering-cxgq'],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    package_dir={"SSVD": "SSVD"},
+    packages=setuptools.find_packages(),
+    python_requires=">=3",
+)
